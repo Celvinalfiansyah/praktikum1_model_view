@@ -46,6 +46,7 @@ E. Mengedit File yang ada pada main.dart yang terdapat pada folder lib
 F. Membuat view plan_screen.dart pada lib/views lalu dalam file plan_screen.dart memasukkan code seperti ini
 
 Setelah Semuanya selesai maka hasil yang akan muncul akan seperti ini :
+
 ![screenshoot praktikum1_model_view](assets/hasil.png)
 
 2. Langkah ini bertujuan untuk mengelola dan mengatur impor model dengan lebih efisien. Dengan membuat file data_layer.dart yang mengimpor kedua model (plan.dart dan task.dart), kita dapat:
@@ -56,7 +57,9 @@ B. Sentralisasi: Ini menciptakan titik sentral untuk semua impor terkait data. J
 Variabel plan dideklarasikan sebagai konstanta (const) untuk alasan berikut: Dengan menjadikannya konstanta, kita memastikan bahwa nilai awal dari plan tidak akan berubah secara tidak sengaja setelah inisialisasi. Hal ini membantu menjaga konsistensi data dan menghindari bug yang mungkin muncul karena perubahan data yang tidak disengaja.
 
 4. Langkah 9: Membuat Widget _buildTaskTile
+
 ![screenshoot praktikum1_model_view](assets/gambar7.png)
+
 Penjelasan: 
 A. Checkbox: Menampilkan kotak centang untuk setiap tugas. Ketika status kotak centang diubah, state aplikasi diperbarui untuk mencerminkan apakah tugas tersebut sudah selesai atau belum.
 B. TextFormField: Menampilkan deskripsi tugas. Ketika teks dalam TextFormField diubah, state aplikasi diperbarui untuk mencerminkan deskripsi tugas yang baru.
