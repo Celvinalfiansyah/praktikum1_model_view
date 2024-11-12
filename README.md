@@ -1,7 +1,5 @@
 # Tugas Praktikum 1: Dasar State dengan Model-View
 
-Praktikum Flutter Model View
-
 ## Celvin Alfiansyah
 ## 362358302104
 ## 2D TRPL
@@ -41,6 +39,7 @@ D. Membuat model data_layer.dart pada lib/models lalu dalam file data_layer.dart
 E. Mengedit File yang ada pada main.dart yang terdapat pada folder lib
 
 ![screenshoot praktikum1_model_view](assets/gambar5.png)
+
 ![screenshoot praktikum1_model_view](assets/gambar6.png)
 
 F. Membuat view plan_screen.dart pada lib/views lalu dalam file plan_screen.dart memasukkan code seperti ini
@@ -81,3 +80,66 @@ Kegunaan dispose():
 A. Pembersihan: Method dispose() dipanggil ketika objek State dihapus secara permanen. Ini digunakan untuk membersihkan resource yang digunakan oleh State, seperti controller yang tidak lagi diperlukan.
 
 B. ScrollController: Di-dispose di sini untuk melepaskan resource yang digunakan oleh ScrollController, mencegah kebocoran memori.
+
+
+# Praktikum 2: Mengelola Data Layer dengan InheritedWidget dan InheritedNotifier
+
+# Soal
+
+1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil
+akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada
+yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan
+aplikasi tersebut dibuat.
+2. Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa
+yang digunakan InheritedNotifier?
+3. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa
+dilakukan demikian?
+4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah
+Anda buat!
+5. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke
+spreadsheet yang telah disediakan!
+
+# Jawab 
+1. Dokumentasi dan Penjelasan
+
+![screenshoot praktikum1_model_view](assets/gambar8.png)
+
+A. Membuat folder provider lalu menambahkan file plan_provider.dart lalu memasukkan code seperti ini
+
+![screenshoot praktikum1_model_view](assets/gambar9.png)
+
+B. Mengedit code yang ada pada main.dart seperti ini
+
+![screenshoot praktikum1_model_view](assets/gambar10.png)
+
+C. Menambahkan Method pada plan.dart seperti ini
+
+![screenshoot praktikum1_model_view](assets/gambar11.png)
+
+![screenshoot praktikum1_model_view](assets/gambar12.png)
+
+![screenshoot praktikum1_model_view](assets/gambar13.png)
+
+D. Mengedit file plan_screen.dart pada views seperti ini
+
+2. Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
+
+A. InheritedWidget adalah widget yang digunakan untuk mengelola state dan memungkinkan state tersebut diakses oleh widget-widget turunannya. Pada langkah 1, PlanProvider adalah contoh InheritedWidget yang digunakan untuk menyediakan state Plan kepada widget-widget turunannya.
+
+B. InheritedNotifier adalah subclass dari InheritedWidget yang menambahkan dukungan untuk ValueNotifier, memungkinkan update yang lebih efisien pada state. InheritedNotifier digunakan untuk memperbarui state hanya ketika ValueNotifier berubah, mengurangi kebutuhan untuk rebuild seluruh subtree.
+
+3. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+
+A.completedCount: Menghitung jumlah tugas yang telah diselesaikan.
+
+B.completenessMessage: Menghasilkan pesan yang menunjukkan berapa banyak tugas yang telah diselesaikan dari total tugas.
+
+Method-method ini ditambahkan untuk memudahkan perhitungan dan tampilan progress penyelesaian tugas di UI. Dengan cara ini, kita dapat dengan mudah mendapatkan informasi tentang status penyelesaian tugas tanpa harus menghitung ulang setiap kali diperlukan.
+
+4. Langkah 9: Tambah widget SafeArea
+
+![screenshoot praktikum1_model_view](assets/gambar14.png)
+
+Langkah 9 menambahkan widget SafeArea untuk menampilkan pesan kemajuan penyelesaian tugas. Anda dapat membuat GIF yang menunjukkan tampilan aplikasi yang menampilkan daftar tugas dengan checkbox dan input teks, serta pesan kemajuan di bagian bawah.
+
+# Praktikum 3: Membuat State di Multiple Screens
