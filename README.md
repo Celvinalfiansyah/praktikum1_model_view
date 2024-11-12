@@ -25,19 +25,24 @@ spreadsheet yang telah disediakan!
 A. Langkah Pertama membuat Proyek flutter baru 
 
 ![screenshoot praktikum1_model_view](assets/gambar1.png)
+
 B. Membuat model task.dart pada lib/models lalu dalam file task.dart memasukkan code seperti ini
 
 ![screenshoot praktikum1_model_view](assets/gambar2.png)
+
 C. Membuat model plan.dart pada lib/models lalu dalam file plan.dart memasukkan code seperti ini
 
 ![screenshoot praktikum1_model_view](assets/gambar3.png)
+
 D. Membuat model data_layer.dart pada lib/models lalu dalam file data_layer.dart memasukkan code seperti ini
 
 ![screenshoot praktikum1_model_view](assets/gambar4.png)
+
 E. Mengedit File yang ada pada main.dart yang terdapat pada folder lib
 
 ![screenshoot praktikum1_model_view](assets/gambar5.png)
 ![screenshoot praktikum1_model_view](assets/gambar6.png)
+
 F. Membuat view plan_screen.dart pada lib/views lalu dalam file plan_screen.dart memasukkan code seperti ini
 
 Setelah Semuanya selesai maka hasil yang akan muncul akan seperti ini :
