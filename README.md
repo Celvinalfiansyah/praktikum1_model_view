@@ -143,3 +143,61 @@ Method-method ini ditambahkan untuk memudahkan perhitungan dan tampilan progress
 Langkah 9 menambahkan widget SafeArea untuk menampilkan pesan kemajuan penyelesaian tugas. Anda dapat membuat GIF yang menunjukkan tampilan aplikasi yang menampilkan daftar tugas dengan checkbox dan input teks, serta pesan kemajuan di bagian bawah.
 
 # Praktikum 3: Membuat State di Multiple Screens
+
+# Soal
+
+1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil
+akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada
+yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan
+aplikasi tersebut dibuat.
+2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar
+diagram berikut ini!
+3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah
+Anda buat!
+4. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke
+spreadsheet yang telah disediakan!
+
+# Jawab
+1. Dokumentasi dan Penjelasan
+
+![screenshoot praktikum1_model_view](assets/gambar15.png)
+
+A. Mengedit kode yang ada pada plan_provider.dart yang berada pada folder provider seperti ini
+
+![screenshoot praktikum1_model_view](assets/gambar16.png)
+
+B. Mengedit kode yang ada pada main.dart seperti ini
+
+![screenshoot praktikum1_model_view](assets/gambar17.png)
+
+C. Mengedit kode pada plan_screen.dart dengan menambahkan variabel plan dan atribut pada constructornya
+
+![screenshoot praktikum1_model_view](assets/gambar18.png)
+
+![screenshoot praktikum1_model_view](assets/gambar19.png)
+
+![screenshoot praktikum1_model_view](assets/gambar20.png)
+
+![screenshoot praktikum1_model_view](assets/gambar21.png)
+
+D. Perbaiki error yang terjadi setiap kali memanggil PlanProvider.of(context). Tambahkan getter pada _PlanScreenState
+
+![screenshoot praktikum1_model_view](assets/gambar22.png)
+
+![screenshoot praktikum1_model_view](assets/gambar23.png)
+
+![screenshoot praktikum1_model_view](assets/gambar24.png)
+
+E. Membuat File baru pada views yaitu plan_creator_screen.dart lalu memasukkan kode seperti ini
+
+![screenshoot praktikum1_model_view](assets/hasil2.png)
+
+F. Maka Hasil webnya akan seperti ini
+
+2. Berdasarkan praktikum yang telah Anda lakukan, jelaskan maksud dari diagram yang menggambarkan arsitektur state management yang Anda terapkan. Jelaskan bagaimana InheritedWidget, ValueNotifier, dan berbagai komponen berinteraksi dalam aplikasi Anda.
+
+3. Langkah 14: Buat widget _buildMasterPlans()
+
+![screenshoot praktikum1_model_view](assets/gambar25.png)
+
+Langkah 14 menambahkan widget _buildMasterPlans untuk menampilkan daftar rencana yang telah dibuat dan memungkinkan pengguna untuk menambah rencana baru. Anda dapat membuat GIF yang menunjukkan tampilan aplikasi yang menampilkan daftar rencana dan memungkinkan penambahan rencana baru.
